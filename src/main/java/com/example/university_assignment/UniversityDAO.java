@@ -13,7 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Component
-public class Runner implements CommandLineRunner {
+public class UniversityDAO implements CommandLineRunner {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
@@ -182,7 +182,6 @@ public class Runner implements CommandLineRunner {
 
         }
         scanner.close();
-        System.out.println("scanner is closed");
     }
 }
 
